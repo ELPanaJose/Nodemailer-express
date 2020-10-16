@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form nodemailer</title>
+    <link rel="shortcut icon" href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.Dk_c6Kwi4JaIxYDlvE3NfQHaHa%26pid%3DApi&f=1" type="image/x-icon">  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+ <div class="container p-4">
+   <div class="row">
+       <div class="col-md-6 offset-md-3">
+           <div class="card">
+               <div class="card-body">
+                 <form action="/send-email" method="POST">
+                     <div class="form-group">
+                         <input type="text" name="name" class="form-control" placeholder="Name" autofocus>
+                     </div>
+                     <div class="form-group">
+                         <input type="text" name="email" placeholder="Email" class="form-control">
+                     </div>
+                     <div class="form-group">
+                         <input type="text" name="phone" placeholder="Phone" class="form-control">
+                     </div>
+                     <div class="form-group">
+                         <textarea name="message" rows="2" class="form-control" placeholder="Message"></textarea>
+                     </div>
+                     <button class="btn btn-primary btn-block">
+                         Send
+                     </button>
+                 </form>
+               </div>
+           </div>
+        </div>
+     </div>
+  </div>
+
+</body>
+</html>
